@@ -15,11 +15,17 @@
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
+        <okhttp3.version>4.8.0</okhttp3.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.authing</groupId>
+            <artifactId>java-core</artifactId>
+            <version>4.3.6</version>
         </dependency>
 
         <dependency>
@@ -57,4 +63,11 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>alimaven</id>
+            <name>aliyun外网maven库临时解决国外网络环境不好的问题</name>
+            <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
+        </repository>
+    </repositories>
 </project>
